@@ -1,38 +1,48 @@
-.App {
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.playerCard{
+  display: block;
+  max-width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.playerCards{
+  display: flex;;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+
+
+/*card header design*/
+.playerCardHeader{
+  padding: 5%;
+  background: rgb(204,232,255);
+  background: linear-gradient(342deg, rgba(204,232,255,1) 0%, rgba(255,221,229,0.9108893557422969) 50%, rgba(229,255,224,1) 100%);
+}
+
+.playerCardHeader h1 {
+  font-size: 2em;
+  text-align: center;
+}
+.playerCardHeader h2 {
+  font-size: 1.6em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*card main design */
+.playerCardMain img{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/*card footer design*/
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerCardFooter{
+  text-align: center;
+  background: rgb(204,232,255);
+  background: linear-gradient(164deg, rgba(204,232,255,1) 0%, rgba(255,221,229,0.9108893557422969) 50%, rgba(229,255,224,1) 100%);
 }
